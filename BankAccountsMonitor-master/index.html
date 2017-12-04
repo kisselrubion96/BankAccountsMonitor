@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+	
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+  
+</head>
+
+
+<body>
+
+    <div class="container" id="newTab">
+        <h2>Bank</h2>
+        <input type="button" id="btnAddAccount"  onclick="on_add_account()" value="Add Account"></input>
+        <br>
+        <h5>Account:</h5>
+        <select class="form-control" id="selectAccount" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+    
+        <h5>Process:</h5>
+                      
+
+
+        <select class="form-control" id="selectProcess">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+        </select>
+
+        <h5>Amount:</h5>
+        <input type="text" class="form-control" id="inputAmount" type="number">
+        <h5>Notes:</h5>
+        <input type="text" class="form-control" id="inputNotes"><br>
+        
+        <button type="button" id="btnSave">Save
+       
+
+      </div>
+	  <div id="accountTab" >
+		<h2>Add Account </h2>
+	  </div>
+
+</body>
+
+</html>
