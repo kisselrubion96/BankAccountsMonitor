@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <div class="container" id="newTab">
+        <div>
+            <h2>Bank Accounts Monitor</h2>
+        </div>
+        <input type="button" id="btnAddAccount" onclick="on_add_account()" value="Add Account"></input>
+        <br>
+        <h5>Account:</h5>
+        <select class="form-control" id="accountsList">
+        </select>
+
+
+        <h5>Process:</h5>
+
+
+
+        <select class="form-control" id="selectProcess" onclick="on_select_process()">
+            <option value="0" selected="selected">Check Balance</option>
+            <option value="1">Deposit</option>
+            <option value="2">Withdraw</option>
+
+        </select>
+
+        <h5>Amount:</h5>
+        <input type="text" class="form-control" placeholder="$" id="inputAmount" type="number" disabled>
+        <br>
+        <button type="button" id="btnSave" onclick="on_save_everything()">Save</button>
+
+
+    </div>
+    <div id="accountTab" class="container">
+        <h2>Add Account </h2>
+        <h5>Account Name : </h5>
+        <input type="text" class="form-control" id="addAccountInput">
+        <h5>Input Amount : </h5>
+        <input class="form-control" id="addAmountInput" type="number">
+
+        <input type="button" id="btnSaveAddedAccount" value="Save Account" onclick="on_save_added_account()"> </input>
+
+    </div>
+    <div id="depositTab" class="container">
+        <h2>Deposit</h2>
+        <h5>Input Amount : </h5>
+        <input class="form-control" id="addDepositInput" type="number">
+        
+        <input type="button" id="btnSaveDeposit" value="Deposit" onclick="on_deposit_amount()"> </input>
+    </div>
+
+    <div id="withdrawTab" class="container">
+        <h2>Withdraw</h2>
+        <h5>Input Amount : </h5>
+        <input class="form-control" id="addWithdrawInput" type="number">
+        
+        <input type="button" id="btnSaveWithdraw" value="Withdraw" onclick="on_withdraw_amount()"> </input>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
